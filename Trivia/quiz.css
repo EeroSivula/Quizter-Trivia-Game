@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background: url(img/question\ mark.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+#question {
+  color: rgb(0, 0, 0);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+}
+
+/*CHOICES*/
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid green;
+  background-color: rgb(100, 191, 214);
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(206, 7, 7);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: rgb(42, 110, 36);
+  color: rgb(0, 0, 0);
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: rgb(114, 226, 1);
+}
+.incorrect {
+  background-color: rgb(255, 0, 0);
+}
+
+/* HUD */
+#hud {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(1, 14, 22);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.hud-prefix {
+  text-align: left;
+  font-size: 2rem;
+}
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: rgb(255, 230, 0);
+  width: 0%;
+  border: 0.3rem solid rgb(124, 69, 115);
+}
+
+/* BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgb(18, 4, 97);
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
